@@ -1,13 +1,63 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.medal-widget__wrapper {
+  display: flex;
+  justify-content: center;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.medal-colors > span {
+  width: 20px;
+  height: 20px;
+  display: block;
+  margin: auto;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.selected {
+  border-top: 2px solid black;
+}
+
+/* table css start */
+.medal-widget__table {
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 0.9em;
+  font-family: sans-serif;
+  min-width: 500px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.medal-widget__table .widget-title {
+  padding: 10px;
+  font-size: 20px;
+  display: block;
+  color: #808080;
+}
+
+.medal-widget__table th,
+.medal-widget__table td {
+  padding: 12px 15px;
+  text-align: center;
+}
+.medal-widget__table thead tr {
+  text-align: center;
+}
+
+.medal-widget__table tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+.medal-widget__table tr:last-of-type {
+  border-bottom: 2px solid #dddddd;
+}
+/* table css ends */
+
+.medal-widget_country-info {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-weight: 500;
 }
